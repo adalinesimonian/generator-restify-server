@@ -1,0 +1,14 @@
+/**
+ * Do NOT modify the values in this configuration file! Your changes may be
+ * overwritten if and when you update to a newer version.
+ */
+{
+  server: {
+    port: 8000,
+    cluster: true
+  },
+  logging: {
+    dir: "logs",
+    level: "debug"
+  }
+}

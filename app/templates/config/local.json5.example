@@ -1,0 +1,28 @@
+/**
+ * Sample configuration file
+ *
+ * If you need to change the default options, copy this file as "local.json" and
+ * edit the copy to your liking.
+ *
+ * You can specify different configuration files for different environments as
+ * defined by NODE_ENV. For example, development.json5 will load when NODE_ENV
+ * is set to "development".
+ */
+{
+  server: {
+    port: 8000,
+    // if false, only uses cluster if NODE_ENV is set to production
+    // if true, always uses cluster
+    cluster: true,
+    // defines the value for the Server response header
+    // if blank or undefined, uses the package name
+    name: "My Wonderful App"
+  },
+  logging: {
+    // log directory
+    dir: "logs",
+    // for valid log levels, see
+    // [bunyan docs](https://github.com/trentm/node-bunyan#levels)
+    level: "debug"
+  }
+}
