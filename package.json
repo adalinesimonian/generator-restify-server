@@ -1,6 +1,6 @@
 {
   "name":        "generator-restify-server",
-  "version":     "0.1.0",
+  "version":     "0.1.1",
   "description": "Yeoman generator that scaffolds out a RESTify server with worker and logging support.",
   "license":     "MIT",
   "main":        "app/index.js",
