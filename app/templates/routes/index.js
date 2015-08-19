@@ -23,7 +23,8 @@ module.exports = function(server, logger) {
     try {
       require(path.join(__dirname, route))(server, logger);
     } catch (err) {
-      throw new Error("Can't load '" + route + "' route");
+      err.message = 'Can\'t load \'' + route + '\' route: ' + err.message;
+      throw err;
     }
   });
 };
